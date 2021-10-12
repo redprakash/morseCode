@@ -1,6 +1,7 @@
 const convertToMorse = (str, morseCodeObject) => {
   if (!str || !morseCodeObject) {
-    return alert('errrr');
+    // return alert('error');
+    throw new Error('Required');
   }
   return str
     .toLowerCase()
@@ -13,3 +14,6 @@ const convertToMorse = (str, morseCodeObject) => {
     .join(' ');
 };
 export default convertToMorse;
+// .replace(/[^A-Z]/g,"")
+// /[^.-/ ]/
+// [^.\-/ ]

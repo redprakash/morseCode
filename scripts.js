@@ -12,17 +12,23 @@ const output = document.querySelector('.output');
 convertBtn.addEventListener('click', () => {
   const userInputValue = document.querySelector('.input__textarea').value;
   if (userInputValue === '') {
-    alert('Can you please type something');
+    alert('Please enter the text or morse code');
   } else {
     const userOption = convertOption.selectedIndex;
     if (userOption === 0) {
       //0 => engligh to Morse
+
       let convertedVal = convertToMorse(userInputValue, morseCodeObjectFormat);
 
       output.textContent = convertedVal;
     } else {
-      let convertedEnglishText = morseToEnglish(userInputValue, changedObj);
-      output.textContent = convertedEnglishText;
+      //1 => Morse to English
+      if (/[^.-/ ]/.test(userInputValue)) {
+        alert('Please enter a valid morse code');
+      } else {
+        let convertedEnglishText = morseToEnglish(userInputValue, changedObj);
+        output.textContent = convertedEnglishText;
+      }
     }
   }
 });

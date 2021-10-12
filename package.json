@@ -1,0 +1,25 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "Morse Code",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redprakash/morseCode.git"
+  },
+  "author": "Prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redprakash/morseCode/issues"
+  },
+  "homepage": "https://github.com/redprakash/morseCode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.5",
+    "jest": "^27.2.5"
+  }
+}
