@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 600px;
+  padding: 40px;
+  background-color: rgb(192, 185, 185);
+  box-sizing: border-box;
+  header {
+    color: rgb(37, 100, 112);
+    letter-spacing: 1px;
+  }
+}
+.input {
+  &__textarea {
+    width: 500px;
+    min-height: 150px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  &__options {
+    width: 500px;
+    margin: 10px 0;
+    height: 30px;
+  }
+  &__button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 90px;
+    height: 45px;
+  }
+}
+.output {
+  width: 500px;
+  min-height: 150px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
