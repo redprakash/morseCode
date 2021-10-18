@@ -14,6 +14,3 @@ const convertToMorse = (str, morseCodeObject) => {
     .join(' ');
 };
 export default convertToMorse;
-// .replace(/[^A-Z]/g,"")
-// /[^.-/ ]/
-// [^.\-/ ]

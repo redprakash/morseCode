@@ -1,4 +1,7 @@
 const morseToEnglish = (str, obj) => {
+  if (!str || !obj) {
+    throw new Error('Required');
+  }
   return str
     .split('  ')
     .map((elem) =>
