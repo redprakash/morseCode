@@ -23,7 +23,7 @@ convertBtn.addEventListener('click', () => {
       output.textContent = convertedVal;
     } else {
       //1 => Morse to English
-      if (/[^.-/ ]/.test(userInputValue)) {
+      if (/[^.\-/ ]/.test(userInputValue)) {
         alert('Please enter a valid morse code');
       } else {
         let convertedEnglishText = morseToEnglish(userInputValue, changedObj);
@@ -32,9 +32,3 @@ convertBtn.addEventListener('click', () => {
     }
   }
 });
-
-// console.log(
-//   morseToEnglish('.. / .- -- / .--. .-. .- -.- .- ... ....', changedObj)
-// );
-
-// console.log(convertToMorse('I am Prakash', morseCodeObjectFormat));
